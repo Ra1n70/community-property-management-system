@@ -1,0 +1,12 @@
+node_modules/
+dist/
+target/
+.env
+.idea/
+*.log
+.local/
+
+out/
+*.iml
+
+uploads/

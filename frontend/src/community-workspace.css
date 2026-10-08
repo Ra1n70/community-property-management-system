@@ -1,0 +1,16 @@
+.community-app-links { display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0,1fr); gap: 14px; margin-bottom: 24px; }
+.community-app-links a { display: grid; gap: 6px; align-content: start; padding: 16px 18px; border: 1px solid #cbded4; border-radius: 16px; background: #fff; color: #24473d; text-decoration: none; transition: box-shadow .15s, border-color .15s; }
+.community-app-links a:hover { border-color: #2c6756; box-shadow: 0 5px 20px #24473d12; }
+.community-app-links strong { display: flex; justify-content: space-between; align-items: center; gap: 6px; font-size: 18px; }
+.community-app-links a > span:not(.eyebrow) { font-size: 13px; line-height: 1.45; }
+.community-app-links .eyebrow { font-size: 10px; }
+.community-app-links small { color: #667b72; font-size: 11px; }
+.community-workspace-main { max-width: 1380px; width: 100%; margin: auto; }
+.workspace-heading { margin: 18px 0 28px; }
+.workspace-heading h1 { margin: 10px 0; }
+.community-workspace-page .direct-message-list { height: 52vh; max-height: none; min-height: 280px; }
+.community-workspace-page .direct-thread { min-height: 68vh; }
+/* One row on wide screens (however many cards), two per row on tablets, one on phones. */
+@media(max-width:900px) { .community-app-links { grid-auto-flow: row; grid-template-columns: repeat(2,minmax(0,1fr)); } }
+@media(max-width:520px) { .community-app-links { grid-template-columns: 1fr; } }
+.community-app-links .app-link-badge { display: inline-block; margin: 0 6px; padding: 2px 8px; border-radius: 999px; background: #b4442c; color: #fff; font-size: 11px; font-weight: 700; vertical-align: middle; }

@@ -1,0 +1,19 @@
+.announcements { display:grid; gap:20px; }
+.announcements .card { margin:0; }
+.announcement-toolbar { display:flex; align-items:center; justify-content:space-between; gap:20px; }
+.announcement-workspace { display:grid; grid-template-columns:minmax(260px,340px) minmax(0,1fr); background:#fff; border:1px solid #d6dfd8; border-top:5px solid #175f4d; border-radius:17px; overflow:hidden; min-height:560px; }
+.announcements .notice-list-panel { padding:26px; background:#fbfcfa; border-right:1px solid #d6dfd8; min-width:0; }
+.announcements .notice-list { display:grid; gap:9px; max-height:65vh; overflow-y:auto; }
+.announcements .notice-item { display:grid; gap:10px; width:100%; padding:16px 12px; text-align:left; background:transparent; border:1px solid transparent; border-radius:8px; min-width:0; }
+.announcements .notice-item.active { background:#edf5ef; border-color:#9ab3a7; }
+.announcements .notice-item strong,.announcements .notice-item small { white-space:nowrap; overflow:hidden; text-overflow:ellipsis; }
+.announcements .notice-item time { font-size:11px; color:#60766c; }
+.announcements .notice-detail { padding:36px; min-width:0; }
+.announcements .notice-detail h2 { font-size:30px; overflow-wrap:anywhere; }
+.announcements .author-line { display:flex; align-items:center; gap:12px; }
+.announcements .author-avatar { width:42px; height:42px; flex-shrink:0; border-radius:50%; display:grid; place-items:center; background:#dfebe5; }
+.announcements .author-line time { display:block; font-size:12px; margin-top:5px; }
+.announcements .notice-content { white-space:pre-wrap; overflow-wrap:anywhere; line-height:1.8; padding-top:24px; border-top:1px solid #d6dfd8; margin-top:24px; }
+.announcements .announcement-editor { display:grid; gap:12px; }
+.announcement-confirm { border-color:#b87546; }
+@media(max-width:780px) { .announcement-workspace { grid-template-columns:1fr; } .announcements .notice-list-panel { border-right:0; border-bottom:1px solid #d6dfd8; } .announcements .notice-list { max-height:300px; } .announcement-toolbar { align-items:stretch; flex-direction:column; } }

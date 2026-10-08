@@ -1,0 +1,99 @@
+/* Community Hub, My Account and Contact & Support */
+.hub-tabs{display:flex;flex-wrap:wrap;align-items:center;gap:8px;border-bottom:1px solid #dce3dc;padding-bottom:16px;margin-bottom:22px}
+.hub-tabs button[aria-pressed=true]{background:#285e4b;color:#fff;border-color:#285e4b}
+.hub-tabs a{margin-left:auto;font-size:13px;font-weight:600;color:#315647;text-decoration:none;padding:10px 4px}
+.hub-tabs a:hover{text-decoration:underline}
+.hub-toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:12px;margin-bottom:14px}
+.hub-toolbar p{margin:0;color:#526a61}
+.hub-filters{display:flex;flex-wrap:wrap;gap:8px;margin:6px 0 18px}
+.hub-filters button{padding:7px 12px;border-radius:999px}
+.hub-filters button span{margin-left:4px;color:#7a8c84;font-weight:500}
+.hub-filters button[aria-pressed=true]{background:#e6f2e7;border-color:#9cc3a8;color:#24473d}
+.hub-form{display:grid;gap:12px;margin-bottom:20px}
+.hub-form h3{margin:0}
+.button-link{display:inline-flex;align-items:center;border:1px solid #ccd8ce;border-radius:8px;padding:10px 15px;font-size:13px;font-weight:600;color:#315647;background:#fff;text-decoration:none}
+.button-link:hover{border-color:#285e4b}
+.button-link.disabled{opacity:.5;pointer-events:none}
+
+/* Voting */
+.poll-list{display:grid;gap:16px}
+.poll-card{display:grid;gap:10px}
+.poll-card h3{margin:8px 0 0}
+.poll-card.closed{background:#fafbf9}
+.poll-description{margin:0;white-space:pre-wrap;color:#3f5a51}
+.poll-options{display:grid;gap:4px}
+.poll-options .check-label{margin-top:6px}
+.poll-options button{justify-self:start;margin-top:10px}
+.poll-results{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.poll-results li>div{display:flex;justify-content:space-between;gap:12px;font-size:14px}
+.poll-results li.mine>div span{font-weight:700}
+.poll-results em{font-style:normal;color:#356746;font-size:12px}
+.poll-results small{color:#7a8c84;font-weight:500}
+.poll-bar{display:block;height:8px;border-radius:999px;background:#edf2ee;margin-top:6px;overflow:hidden}
+.poll-bar i{display:block;height:100%;background:#7aa98b;border-radius:999px}
+.poll-results li.mine .poll-bar i{background:#285e4b}
+.poll-turnout{font-size:12px;color:#607169}
+.poll-option-editor{border:1px solid #dce3dc;border-radius:12px;padding:12px 14px;display:grid;gap:8px}
+.poll-option-row{display:flex;gap:8px}
+.poll-option-row input{flex:1}
+
+/* Local perks */
+.perk-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:16px}
+.perk-card{display:grid;gap:8px;align-content:start}
+.perk-card h3{margin:0}
+.perk-card p{margin:0;white-space:pre-wrap}
+.perk-card.expired{opacity:.75;background:#fafbf9}
+.perk-business{color:#285e4b}
+.perk-card small{color:#607169}
+.perk-card .actions{flex-wrap:wrap;margin-top:4px}
+.perk-details{display:grid;gap:6px;border-top:1px solid #e6ece7;padding-top:10px}
+.perk-controls{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:12px;margin:6px 0 18px}
+.perk-controls .hub-filters{margin:0}
+.perk-selects{display:flex;gap:10px}
+.perk-selects label{margin:0;display:flex;align-items:center;gap:8px;font-size:13px}
+.perk-selects select{margin:0;width:auto;padding:8px 10px}
+
+/* Lease documents */
+.my-account-identity{color:#607169;margin:-12px 0 18px}
+.lease-list{list-style:none;padding:0;margin:0;display:grid;gap:10px}
+.lease-list li{display:flex;align-items:center;gap:14px;border:1px solid #dce3dc;border-radius:12px;padding:12px 14px}
+.lease-list li>div:nth-child(2){flex:1;min-width:0;display:grid;gap:4px}
+.lease-list small{color:#607169;overflow-wrap:anywhere}
+.lease-icon{flex-shrink:0;font-size:10px;font-weight:700;letter-spacing:1px;color:#9c4e34;background:#fce9e2;border-radius:8px;padding:10px 8px}
+.lease-manager{display:grid;gap:12px}
+
+/* Messages with contact & support */
+.messages-with-support{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:20px;align-items:start}
+.messages-with-support.manager{grid-template-columns:1fr}
+.messages-with-support>:first-child{min-width:0}
+.support-panel{display:grid;gap:10px;position:sticky;top:20px}
+.support-panel h2,.support-panel h3{margin:0}
+.support-panel h3{font-size:15px;margin-top:8px}
+.support-contact{display:grid;grid-template-columns:auto 1fr;gap:6px 12px;margin:0;font-size:14px}
+.support-contact dt{color:#607169}
+.support-contact dd{margin:0;overflow-wrap:anywhere}
+.support-faqs details{border-top:1px solid #e6ece7;padding:10px 0}
+.support-faqs summary{cursor:pointer;font-weight:600;font-size:14px}
+.support-faqs p{margin:8px 0 0;white-space:pre-wrap;font-size:14px;color:#3f5a51}
+.faq-editor{padding-left:20px;display:grid;gap:12px}
+.faq-editor li>div:first-child p{margin:4px 0 8px;white-space:pre-wrap;color:#3f5a51}
+.support-settings form{margin-bottom:18px}
+@media(max-width:900px){.messages-with-support{grid-template-columns:1fr}.support-panel{position:static}}
+@media(max-width:650px){.hub-tabs a{margin-left:0}.lease-list li{flex-wrap:wrap}}
+
+/* Resident Messages: property management and neighbor chats */
+.messages-tabs{margin-bottom:18px}
+.messages-tabs .direct-unread{margin-left:6px}
+/* The property tab stays mounted (to keep its unread count) but must really hide behind the Neighbors tab. */
+.messages-with-support[hidden]{display:none}
+.neighbor-chats{display:grid;grid-template-columns:300px minmax(0,1fr);gap:20px;align-items:start}
+.neighbor-list{display:grid;gap:8px}
+.neighbor-list h2{margin:0}
+.neighbor-list ul{list-style:none;margin:0;padding:0;display:grid;gap:6px;max-height:60vh;overflow:auto}
+.neighbor-list li button{width:100%;display:flex;align-items:center;gap:10px;text-align:left;padding:10px;border-radius:12px}
+.neighbor-list li button.active{background:#eef4ed;border-color:#9cc3a8}
+.neighbor-list-text{flex:1;min-width:0;display:grid}
+.neighbor-list-text small{color:#607169;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;font-weight:400}
+.neighbor-list-meta{display:grid;justify-items:end;gap:4px}
+.neighbor-list-meta small{color:#7a8c84;font-weight:400}
+@media(max-width:900px){.neighbor-chats{grid-template-columns:1fr}}
