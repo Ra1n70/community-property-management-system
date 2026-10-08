@@ -131,3 +131,18 @@ cd frontend
 npm test
 npm run build
 ```
+
+## Team
+
+| Member | GitHub | Role | Modules |
+|---|---|---|---|
+| Xuanyu Zhang | [@Ra1n70](https://github.com/Ra1n70) | Group Lead · Full stack | Authentication & Roles, Payments, Lease Documents, Contact & Support, Community Voting, Direct Messaging (real-time updates, attachments, frontend), Search (database search), Maintenance workflow, Package courier codes, Management Reports, Discussion Board & Local Perks (frontend), integration |
+| Yijin Guo | [@gguoyijin-tech](https://github.com/gguoyijin-tech) | Backend Lead | Discussion Board (backend), Local Perks (backend) |
+| Yi He | [@coco161818-spec](https://github.com/coco161818-spec) | Backend | Authentication & Roles (backend) |
+| Zhiqiao Kang | [@ZhiqiaoKang](https://github.com/ZhiqiaoKang) | Full stack | Community Announcements |
+| Xinye Zhang | [@xinyez166](https://github.com/xinyez166) | Full stack | Package Lockers |
+| Huiping Zhou | [@Narkissoz](https://github.com/Narkissoz) | Backend | Amenity Reservations, Management Reports (metrics) |
+| Junqing Yang | [@weijunyeyeqiqingfeng](https://github.com/weijunyeyeqiqingfeng) | Frontend | Amenity Reservations (frontend), Maintenance Requests (frontend) |
+| Wei Zhang | [@zw-567](https://github.com/zw-567) | Backend | Maintenance Requests (backend) |
+| Xunming Zhu | [@sangerzhu](https://github.com/sangerzhu) | Full stack | Search (initial API and page) |
+| Zihong Zhu | [@lackname](https://github.com/lackname) | Backend | Direct Messaging, Resident Chat (backend) |
